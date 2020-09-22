@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+p, li, h1, h2, th, td {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #77AF9C;
+}
+
+th{
+    color: #285943;
+}
+            
+h1 {
+    color: #D7FFF1;
+    background-color: #285943;
+    text-align: center;
+    font-size: 50px;
+    padding:20px;
+    text-shadow: 2px 2px 5px #8CD790;
+}
+
+h2{
+    color: #77AF9C;
+}
+            
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.floating-menu {
+    background: #D7FFF1;
+    padding: 5px;;
+    width: 170px;
+    z-index: 100;
+    position: fixed;
+}
+            
+.floating-menu a, 
+.floating-menu h3 {
+    display: block;
+    margin: 0 0.5em;
+    color: #285943;
+}
+            
+#grid #article{
+    padding-left:200px;
+}
