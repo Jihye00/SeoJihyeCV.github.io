@@ -8,107 +8,140 @@
             }
             th, td {
                 padding: 15px;
-                border-bottom: 1px solid  rgb(187, 187, 187);
+                border-bottom: 1px solid  #77AF9C;
+            }
+            th{
+                color: #285943;
             }
             h1 {
+                color: #D7FFF1;
+                background-color: #285943;
                 text-align: center;
-                text-shadow: 2px 2px 5px rgb(103, 151, 14);
+                /*text-shadow: 2px 2px 5px rgb(103, 151, 14);*/
                 font-size: 50px;
+                padding:20px;
+                text-shadow: 2px 2px 5px #8CD790;
             }
-            a:link, a:visited {
-                background-color: white;
-                color: black;
-                padding: 14px 25px;
-                text-align: center;
-                text-decoration: none;
-                display: block;
+            h2{
+                color: #77AF9C;
             }
-            a:hover {background:#66ff66;}
             img{
                 display: block;
                 margin-left: auto;
-                margin-right: auto;
+                margin-right: 0;
+            }
+            .floating-menu {
+                background: #D7FFF1;
+                padding: 5px;;
+                width: 170px;
+                z-index: 100;
+                position: fixed;
+            }
+            .floating-menu a, 
+            .floating-menu h3 {
+                display: block;
+                margin: 0 0.5em;
+                color: #285943;
+            }
+            #grid #article{
+                padding-left:200px;
             }
         </style>
     </head>
     <body>
-        <h1 title="Korean Name: Seo Jihye(서지혜)"><mark>Sophie Seo's CV Page</mark> </h1>
-        <img src="photo.jpg" alt="picture" width="60" height="78">
-        <div class = "center">
-            <a href="self_introducing_ko.html" class="center"> 한국어(Korean) </a>
+        <h1 title="Korean Name: Seo Jihye(서지혜)">Sophie Seo's CV Page</h1>
+        <br>
+
+        <div id="grid">
+            <nav class="floating-menu">
+                <ol>
+                    <li><a href="javascript:window.scrollTo(0,360)">Language</a></li>
+                    <li><a href="javascript:window.scrollTo(0,620)">Experience</a></li>
+                    <li><a href="javascript:window.scrollTo(0,920)">Education</a></li>
+                    <li><a href="javascript:window.scrollTo(0,930)">Hobby</a></li>
+                    <li><a href="javascript:window.scrollTo(0,930)">Contact</a></li>
+                    <li><a href="self_introducing_ko.html" class="center"> 한국어(Korean) </a></li>
+                </ol>
+              </nav>
+            <div id="article">
+                <img src="photo.jpg" alt="picture" width="120" height="156">
+                <h2> Languages </h2>
+                <table style="width:100%">
+                    <tr>
+                    <th colspan="2">Computer Languages</th>
+                    <th colspan="2">Human Languages</th>
+                    </tr>
+                    <tr>
+                    <td>Good at</td>
+                    <td>Learning</td>
+                    <td>Good at</td>
+                    <td>Learning</td>
+                    </tr>
+                    <tr>
+                    <td>C, C++, Python, Arduino, HTML/CSS</td>
+                    <td>JS, SQL, Assembly Language</td>
+                    <td>Korean, English</td>
+                    <td>German, Chinese</td>
+                    </tr>
+                </table>
+                <br>
+                <hr>
+                <br>
+
+                <h2> Experiences </h2>
+                <ul>
+                    <li> 2020 Girls in ICT Hackerthon - participating </li>
+                    <li> 2020 YEHS Makerthon - participated </li>
+                    <li> 2020 GuitarHana General Affairs </li>
+                    <li> 2020~ YEHS<sub>(Young Engineers Honor Society) </sub> Member</li>
+                    <li> 2020~ Laon<sub>(Library Autonomous Committee)</sub> Design Team Member</li>
+                    <li> 2020~ PoApper<sub>(Web/App Developing Club)</sub> Club Member </li>
+                    <li> 2019~ GuitarHana<sub>(Guitar Club)</sub> Club Member</li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+
+                <h2> Education </h2>
+                <ul>
+                    <li> 2019~ <abbr title="Pohang University of Science and Technology">POSTECH</abbr> </li>
+                    <ul>
+                        <li> Major:  Computer Science and Engineering </li>
+                        <li> Minor: Economics and Finance </li>
+                    </ul>
+                    <li> 2016~2018 Sangsan High School </li>
+                    <li> 2013~2015 Yedang Middle School</li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                
+                <h2> Hobby </h2>
+                <ul>
+                    <li> Piano, Guitar, Singing </li>
+                    <li> Ski, Yoga </li>
+                    <li> Drawing with Watercolor Pencil </li>
+                    <li> Learning Something New </li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                
+                <address>
+                    <h2> Contact </h2>
+                    Phone: 010-8315-9372
+                    <br>
+                    Email: seojh0813@postech.ac.kr
+                    <br>
+                    Facebook: <a href="https://www.facebook.com/seojihye00" class="center"> https://www.facebook.com/seojihye00 </a>
+                    <br>
+                    Instagram: <a href="http://instagram.com/jhseo0813" class="center"> http://instagram.com/jhseo0813 </a>
+                </address>
+                <br>
+                <hr>
+                <br>
+            </div>
         </div>
-        <br>
-
-        <h2 style="color:DodgerBlue";> Languages </h2>
-        <table style="width:100%">
-            <tr>
-              <th colspan="2">Computer Languages</th>
-              <th colspan="2">Human Languages</th>
-            </tr>
-            <tr>
-              <td>Good at</td>
-              <td>Learning</td>
-              <td>Good at</td>
-              <td>Learning</td>
-            </tr>
-            <tr>
-              <td>C, C++, Python, Arduino</td>
-              <td>HTML/CSS, JS, SQL, Assembly Language</td>
-              <td>Korean, English</td>
-              <td>German, Chinese</td>
-            </tr>
-          </table>
-        <br>
-        <hr>
-        <br>
-
-        <h2 style="color:DodgerBlue";> Experiences </h2>
-        <ul>
-            <li> 2020 Girls in ICT Hackerthon - participating </li>
-            <li> 2020 YEHS Makerthon - participated </li>
-            <li> 2020 GuitarHana General Affairs </li>
-            <li> 2020~ YEHS<sub>(Young Engineers Honor Society) </sub> Member</li>
-            <li> 2020~ Laon<sub>(Library Autonomous Committee)</sub> Design Team Member</li>
-            <li> 2020~ PoApper<sub>(Web/App Developing Club)</sub> Club Member </li>
-            <li> 2019~ GuitarHana<sub>(Guitar Club)</sub> Club Member</li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-
-        <h2 style="color:DodgerBlue";> Education </h2>
-        <ul>
-            <li> 2019~ <abbr title="Pohang University of Science and Technology">POSTECH</abbr> </li>
-            <ul>
-                <li> Major:  Computer Science and Engineering </li>
-                <li> Minor: Economics and Finance </li>
-            </ul>
-            <li> 2016~2018 Sangsan High School </li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-        
-        <h2 style="color:DodgerBlue";> Hobby </h2>
-        <ul>
-            <li> Piano, Guitar, Singing </li>
-            <li> Ski, Yoga </li>
-            <li> Drawing with Watercolor Pencil </li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-        
-        <address>
-            <h2> Contact </h2>
-            Phone: 010-8315-9372
-            <br>
-            Email: seojh0813@postech.ac.kr
-            <br>
-            Facebook: https://www.facebook.com/seojihye00
-            <br>
-            Instagram: http://instagram.com/jhseo0813
-        </address>
         
     </body>
 </html>
